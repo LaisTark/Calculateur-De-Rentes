@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Rentes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700 & family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Judul -->
+    <h1>Kalkulator Anuitas</h1>
+
+    <!-- Inputan Nilai -->
+    <label for="pinjaman">Jumlah Uang Pinjaman (Rp)</label>
+    <input
+        type="number"
+        id="pinjaman"
+        placeholder="Masukkan Jumlah Uang"
+    >
+    <label for="periode">Periode Pinjaman (Bulan)</label>
+    <input
+        type="number"
+        id="periode"
+        placeholder="Masukkan Jumlah Bulan"
+    >
+    <label for="persentase">Persentase Bunga (%)</label>
+    <input
+        type="number"
+        id="persentase"
+        placeholder="Masukkan Persentase Bunga"
+    >
+
+    <button onclick="calculate()">Hitung</button>
+
+    <!-- Hasil Perhitungan -->
+    <p id="hasil_anuitas"></p>
+    <p id="hasil_bunga"></p>
+    <p id="hasil_pokok"></p>
+    <p id="sisa_pinjaman"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Bulan</th>
+                <th>Angsuran Pokok</th>
+                <th>Bunga</th>
+                <th>Anuitas</th>
+                <th>Sisa Pinjaman</th>
+            </tr>
+        </thead>
+        <tbody id="tabel_hasil">
+            <!-- Hasil perhitungan akan ditampilkan di sini -->
+        </tbody>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
